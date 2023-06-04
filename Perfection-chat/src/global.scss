@@ -29,7 +29,7 @@
   &::part(backdrop){
     background-color: none;
   }
-  
+
   &::part(content) {
     width: fit-content;
     height: fit-content;
@@ -48,11 +48,11 @@
   ion-textarea {
     --padding-top: 0;
   }
-  
+
 }
 
 .item-divider {
-  border-bottom: 1px solid #5c5c5c;
+  border-bottom: 1px solid #000000;
 }
 
 ion-button{

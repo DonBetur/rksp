@@ -1,13 +1,14 @@
 <ion-content>
   <div class="title-container">
-    <ion-text class="team715-text">715Team</ion-text>
+    <ion-text class="team715-text">Студия Ромашка</ion-text>
     <ion-icon
-      class="team715-icon"
-      name="logo-foursquare"
-      color="danger"
+      name="flower-outline"
+      size="large"
+
+
     ></ion-icon>
   </div>
-  <div class="subtitle-container">Сделаем будущее вместе!</div>
+  <div class="subtitle-container">Мы скоро станем Riki!</div>
 
   <form #form="ngForm" (ngSubmit)="onSubmit()">
     <ion-card>
@@ -102,7 +103,7 @@
       >
       <p *ngIf="submissionType === 'join'" class="terms-and-conditions">
         Нажимая "Подтверждаю & Присоединиться", вы подтверждаете, что
-        соглашаетесь с правилами 715Team о:
+        соглашаетесь с правилами студии о:
         <ion-text color="tertiary">Пользовательском соглашение</ion-text>,
         <ion-text color="tertiary">Политики конфиденциальности</ion-text>, и
         <ion-text color="tertiary"
@@ -121,8 +122,8 @@
     </ion-card>
   </form>
   <div class="toggle-text">
-    {{ submissionType === 'login' ? 'Новый пользователь компании?' : 'Уже в
-    команде 715Team?' }}
+    {{ submissionType === 'login' ? 'Новый пользователь студии?' : 'Уже в
+    команде студии?' }}
     <ion-text class="toggle-auth-mode" (click)="toggleText()" color="primary">
       {{ submissionType === 'login' ? 'Присоединиться сейчас' : 'Войти' }}
     </ion-text>
