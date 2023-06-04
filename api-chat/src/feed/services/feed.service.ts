@@ -52,7 +52,7 @@ export class FeedService {
   }
 
   findPostById(id: number): Observable<FeedPost>{
-    return from(this.feedPostRepository.findOne({id}, {relations: ['author'] }), 
+    return from(this.feedPostRepository.findOne({where:{id}, relations: ['author'] }),
     );
   }
 }

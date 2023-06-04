@@ -22,7 +22,7 @@ export class AuthService {
   }
 
   doesUserExist(email: string): Observable<boolean> {
-    return from(this.userRepository.findOne({ email })).pipe(
+    return from(this.userRepository.findOne({where:{ email }},)).pipe(
       switchMap((user: User) => {
         return of(!!user);
       }),
@@ -66,10 +66,12 @@ export class AuthService {
   validateUser(email: string, password: string): Observable<User> {
     return from(
       this.userRepository.findOne(
-        { email },
         {
+         where: {email},
+       //{
           select: ['id', 'firstName', 'lastName', 'email', 'password', 'role'],
-        },
+        //},
+        }
       ),
     ).pipe(
       switchMap((user: User) => {
