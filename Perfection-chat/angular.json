@@ -80,11 +80,8 @@
             "browserTarget": "app:build"
           },
           "configurations": {
-	    "development":{
-              "browserTarget": "app:build:production"	
-	    },
             "production": {
-              "browserTarget": "app:build:development"
+              "browserTarget": "app:build:production"	
             },
             "ci": {
               "progress": true
