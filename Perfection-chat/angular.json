@@ -64,27 +64,26 @@
                 {
                   "type": "initial",
                   "maximumWarning": "2mb",
-                  "maximumError": "50mb"
+                  "maximumError": "5mb"
                 }
               ]
             },
             "ci": {
-              "progress": true
+              "progress": false
             }
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:browser",
-	  "defaultConfiguration": "production",
+          "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "app:build:production"	
+              "browserTarget": "app:build:production"
             },
             "ci": {
-              "progress": true
+              "progress": false
             }
           }
         },
