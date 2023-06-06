@@ -3,7 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
+  production: true,
   baseApiUrl: 'https://rkspback-production.up.railway.app/api-chat'
   //baseApiUrl: 'http://localhost:3000/api-chat'
 };
