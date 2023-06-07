@@ -1,6 +1,9 @@
 {
   "name": "Perfection-chat",
   "version": "0.0.1",
+  "engines":{
+	"node": ">=18 <19"
+	},
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
   "scripts": {
@@ -14,6 +17,7 @@
     "cypress:run": "cypress run"
   },
   "private": true,
+  "sideEffects":true,
   "dependencies": {
     "@angular/common": "~13.2.2",
     "@angular/core": "~13.2.2",
